@@ -3,30 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ControllsDemo.PresentationControlsDemo"
              Title="PresentationControlsDemo">
-    <StackLayout>
-        <BoxView    BackgroundColor="grey"
+    <ScrollView>
+        <StackLayout>
+            <BoxView    BackgroundColor="grey"
                     HeightRequest="200"/>
 
-        <Label      Text="XAMARIN" TextColor="Black"
+            <Label      Text="XAMARIN" TextColor="Black"
                     FontSize="Large"
                     FontAttributes="Bold"
                     HorizontalTextAlignment="Center"/>
-        
-        <Ellipse    Fill="Red"
+
+            <Ellipse    Fill="Red"
                     Stroke="DarkBlue"
                     HeightRequest="200"
                     StrokeThickness="10"
                     HorizontalOptions="Center"
                     WidthRequest="200"/>
-        
-        <Line       Stroke="Pink"
+
+            <Ellipse    Fill="Red"
+                    Stroke="DarkBlue"
+                    HeightRequest="200"
+                    StrokeThickness="10"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
+
+            <Line       Stroke="Pink"
                     X1="0"
                     Y1="0"
                     X2="100"
                     Y2="50"
                     StrokeThickness="10"/>
-        
-        <Rectangle  Fill="Green"
+
+            <Rectangle  Fill="Green"
                     Stroke="Black"
                     HeightRequest="50"
                     StrokeThickness="5"
@@ -34,22 +42,51 @@
                     WidthRequest="150"
                     RadiusX="10"
                     RadiusY="15"/>
-        
-        <Polygon    Fill="LightBlue"
+
+            <Polygon    Fill="LightBlue"
                     Points="40,10 70,80 10,50"
                     Stroke="Red"
                     StrokeThickness="6"/>
-        
-        <Polygon    Fill="Yellow"
+
+            <Polygon    Fill="Yellow"
                     Points="40,10 70,80 10 ,50"
                     Stroke="Green"
                     StrokeDashArray="1,1"
                     StrokeDashOffset="6"
                     StrokeThickness="5"/>
 
-        <Polyline Points="0,0 10,30 15,0 18,60 23,30 35,30 40, 0 43 , 60 48, 30 100, 30"
+            <Polyline Points="0,0 10,30 15,0 18,60 23,30 35,30 40, 0 43 , 60 48, 30 100, 30"
                   Stroke="Red"/>
 
 
-    </StackLayout>
+            <Polyline Points="0,0 10,30 15,0 18,60 23,30 35,30 40, 0 43 , 60 48, 30 100, 30"
+                  Stroke="Blue"/>
+
+            <Path Aspect="Uniform"
+                  Data="M 10,100 L 100,100 100 50Z"
+                  HorizontalOptions="Center"
+                  Stroke="Black"/>
+            <Border Stroke="Yellow"
+                    StrokeThickness="4"
+                    Background="Purple"
+                    HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="40,0,0,40"/>
+                </Border.StrokeShape>
+                <Label Text="Welcome to the Dschungel Baby"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       TextColor="White"/>
+            </Border>
+            <Frame Margin="5"
+                   BackgroundColor="Yellow"
+                   Padding="80">
+                <Image Source="dotnet_bot.png"
+                   Aspect="Fill"/>
+            </Frame>
+
+            <WebView HeightRequest="500"
+                     Source="https://alain-soltau.de"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
