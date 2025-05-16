@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControllsDemo.CommandsControlsDemo"
+             Title="CommandsControlsDemo">
+    <StackLayout>
+        <Button x:Name="btnTest" Text="TestMeBabyOneMoreTime!"
+                Clicked="btnTest_Clicked"/>
+        <ImageButton Source="dotnet_bot.png"
+                     Clicked="ImageButton_Clicked"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 1"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+             Content="Option 2"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+             Content="Option 3"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+             Content="Option 4"/>
+    </StackLayout>
+</ContentPage>
