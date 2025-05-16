@@ -4,13 +4,51 @@
              x:Class="ControllsDemo.PresentationControlsDemo"
              Title="PresentationControlsDemo">
     <StackLayout>
-        <BoxView BackgroundColor="Blue"
-                 HeightRequest="200"/>
-        <Label Text="XAMARIN" TextColor="Black"
-               FontSize="Large"
-               FontAttributes="Bold"
-               HorizontalTextAlignment="Center"/>
+        <BoxView    BackgroundColor="grey"
+                    HeightRequest="200"/>
 
+        <Label      Text="XAMARIN" TextColor="Black"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"/>
+        
+        <Ellipse    Fill="Red"
+                    Stroke="DarkBlue"
+                    HeightRequest="200"
+                    StrokeThickness="10"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
+        
+        <Line       Stroke="Pink"
+                    X1="0"
+                    Y1="0"
+                    X2="100"
+                    Y2="50"
+                    StrokeThickness="10"/>
+        
+        <Rectangle  Fill="Green"
+                    Stroke="Black"
+                    HeightRequest="50"
+                    StrokeThickness="5"
+                    HorizontalOptions="End"
+                    WidthRequest="150"
+                    RadiusX="10"
+                    RadiusY="15"/>
+        
+        <Polygon    Fill="LightBlue"
+                    Points="40,10 70,80 10,50"
+                    Stroke="Red"
+                    StrokeThickness="6"/>
+        
+        <Polygon    Fill="Yellow"
+                    Points="40,10 70,80 10 ,50"
+                    Stroke="Green"
+                    StrokeDashArray="1,1"
+                    StrokeDashOffset="6"
+                    StrokeThickness="5"/>
+
+        <Polyline Points="0,0 10,30 15,0 18,60 23,30 35,30 40, 0 43 , 60 48, 30 100, 30"
+                  Stroke="Red"/>
 
 
     </StackLayout>
