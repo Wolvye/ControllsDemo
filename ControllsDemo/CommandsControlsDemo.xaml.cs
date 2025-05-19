@@ -26,4 +26,14 @@ public partial class CommandsControlsDemo : ContentPage
     {
         DisplayAlert("RadioButton", $"Searching: {searchControl.Text}", "Ok");
     }
+
+    private void SwipeItem_Invoked(object sender, EventArgs e)
+    {
+        DisplayAlert("RadioButton", $"Element Tapped", "Ok");
+    }
+
+    private void SwipeItem_Invoked_1(object sender, EventArgs e)
+    {
+        DisplayAlert("RadioButton", $"Element Tapped", "Ok");
+    }
 }

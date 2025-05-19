@@ -33,10 +33,17 @@
                     <SwipeItem 
                 BackgroundColor="Blue"
                 IconImageSource="dotnet_bot.png"
-                Invoked="SwipeItem_Invoked"
+                Invoked="SwipeItem_Invoked_1"
                 Text="Delete" />
                 </SwipeItems>
             </SwipeView.LeftItems>
+            <Grid Background="Grey"
+                  HeightRequest="60"
+                  WidthRequest="300">
+                <Label HorizontalOptions="Center"
+                    Text="SwipeRight"
+                    VerticalOptions="Center"/>
+            </Grid>
         </SwipeView>
     </StackLayout>
 </ContentPage>
