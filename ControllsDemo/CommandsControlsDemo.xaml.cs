@@ -21,4 +21,9 @@ public partial class CommandsControlsDemo : ContentPage
     {
         DisplayAlert("RadioButton", $"Changed: {e.Value}", "Ok");
     }
+
+    private void searchControl_SearchButtonPressed(object sender, EventArgs e)
+    {
+        DisplayAlert("RadioButton", $"Searching: {searchControl.Text}", "Ok");
+    }
 }

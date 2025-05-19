@@ -9,12 +9,34 @@
         <ImageButton Source="dotnet_bot.png"
                      Clicked="ImageButton_Clicked"/>
         <RadioButton CheckedChanged="RadioButton_CheckedChanged"
-                     Content="Option 1"/>
+                     Content="Option 1"
+                     GroupName="group1"/>
         <RadioButton CheckedChanged="RadioButton_CheckedChanged"
-             Content="Option 2"/>
+             Content="Option 2"
+                     GroupName="group1"/>
         <RadioButton CheckedChanged="RadioButton_CheckedChanged"
-             Content="Option 3"/>
+             Content="Option 3"
+                     GroupName="group2"/>
         <RadioButton CheckedChanged="RadioButton_CheckedChanged"
-             Content="Option 4"/>
+             Content="Option 4" 
+                     GroupName="group2"/>
+        <SearchBar  x:Name="searchControl"
+                    SearchButtonPressed="searchControl_SearchButtonPressed"/>
+        <SwipeView>
+            <SwipeView.LeftItems>
+                <SwipeItems>
+                    <SwipeItem 
+                BackgroundColor="Green"
+                IconImageSource="dotnet_bot.png"
+                Invoked="SwipeItem_Invoked"
+                Text="Favorite" />
+                    <SwipeItem 
+                BackgroundColor="Blue"
+                IconImageSource="dotnet_bot.png"
+                Invoked="SwipeItem_Invoked"
+                Text="Delete" />
+                </SwipeItems>
+            </SwipeView.LeftItems>
+        </SwipeView>
     </StackLayout>
 </ContentPage>
