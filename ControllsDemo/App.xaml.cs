@@ -9,7 +9,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new InputControls());
+            return new Window(new TextControlDemo());
         }
     }
 }
