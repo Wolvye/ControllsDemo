@@ -41,7 +41,7 @@
             SelectedIndicatorColor="DarkBlue"/>
     </StackLayout>-->
 
-        <CarouselView IndicatorView="indicatorView"
+        <!--<CarouselView IndicatorView="indicatorView"
                       ItemsLayout="VerticalList">
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
@@ -79,8 +79,86 @@
         x:Name="indicatorView"
         HorizontalOptions="Center"
         IndicatorColor="LightBlue"
+        SelectedIndicatorColor="DarkBlue"/>-->
+
+
+
+        <!--<CollectionView SelectionMode="Single">
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String >mono</x:String>
+                    <x:String >monodroid</x:String>
+                    <x:String >monotouch</x:String>
+                    <x:String >monorail</x:String>
+                    <x:String >monodevelop</x:String>
+                    <x:String >monotone</x:String>
+                    <x:String >monopoly</x:String>
+                    <x:String >monomodal</x:String>
+                    <x:String >mononucleosis</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame Margin="20"
+                           BorderColor="Gray"
+                           CornerRadius="5"
+                           HasShadow="True"
+                           HeightRequest="100"
+                           HorizontalOptions="Center">
+                            <Label Text="{Binding .}" />
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <IndicatorView
+        x:Name="indicatorView"
+        HorizontalOptions="Center"
+        IndicatorColor="LightBlue"
         SelectedIndicatorColor="DarkBlue"/>
-        
+    </StackLayout>-->
+
+
+        <!--<Picker VerticalOptions="Center" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String >mono</x:String>
+                    <x:String >monodroid</x:String>
+                    <x:String >monotouch</x:String>
+                    <x:String >monorail</x:String>
+                    <x:String >monodevelop</x:String>
+                    <x:String >monotone</x:String>
+                    <x:String >monopoly</x:String>
+                    <x:String >monomodal</x:String>
+                    <x:String >mononucleosis</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>-->
+
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="First Section">
+                    <TextCell Detail="TextCell Detail" Text="TextCell"/>
+                    <EntryCell Label="Enty Label" Text="EntyCell text"/>
+                    <SwitchCell Text="SwitchCell Text"/>
+                    <ImageCell
+                        Detail="ImageCell Detail"
+                        ImageSource="dotnet_bot.png"
+                        Text="ImageCell Text" />
+                </TableSection>
+                <TableSection Title="Second Section">
+                    <TextCell Detail="TextCell Detail" Text="TextCell"/>
+                    <EntryCell Label="Enty Label" Text="EntyCell text"/>
+                    <SwitchCell Text="SwitchCell Text"/>
+                    <ImageCell
+                        Detail="ImageCell Detail"
+                        ImageSource="dotnet_bot.png"
+                        Text="ImageCell Text" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
     </StackLayout>
 
 </ContentPage>
