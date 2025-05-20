@@ -3,8 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ControllsDemo.ActivityControlDemo"
              Title="ActivityControlDemo">
-    <VerticalStackLayout>
-        <ActivityIndicator IsRunning="True" Color="blue"/>
-        <ProgressBar Progress=".5"/>
-    </VerticalStackLayout>
+    <StackLayout>
+        <!--<CarouselView IndicatorView="indicatorView">
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String >mono</x:String>
+                    <x:String >monodroid</x:String>
+                    <x:String >monotouch</x:String>
+                    <x:String >monorail</x:String>
+                    <x:String >monodevelop</x:String>
+                    <x:String >monotone</x:String>
+                    <x:String >monopoly</x:String>
+                    <x:String >monomodal</x:String>
+                    <x:String >mononucleosis</x:String>
+                </x:Array>
+            </CarouselView.ItemsSource>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame Margin="20"
+                               BorderColor="Gray"
+                               CornerRadius="5"
+                               HasShadow="True"
+                               HeightRequest="100"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding .}" />
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView
+            x:Name="indicatorView"
+            HorizontalOptions="Center"
+            IndicatorColor="LightBlue"
+            SelectedIndicatorColor="DarkBlue"/>
+    </StackLayout>-->
+
+        <CarouselView IndicatorView="indicatorView"
+                      ItemsLayout="VerticalList">
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String >mono</x:String>
+                    <x:String >monodroid</x:String>
+                    <x:String >monotouch</x:String>
+                    <x:String >monorail</x:String>
+                    <x:String >monodevelop</x:String>
+                    <x:String >monotone</x:String>
+                    <x:String >monopoly</x:String>
+                    <x:String >monomodal</x:String>
+                    <x:String >mononucleosis</x:String>
+                </x:Array>
+            </CarouselView.ItemsSource>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                   
+                        <StackLayout>
+                            <Frame Margin="20"
+                           BorderColor="Gray"
+                           CornerRadius="5"
+                           HasShadow="True"
+                           HeightRequest="100"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding .}" />
+                            </Frame>
+                        </StackLayout>
+                   
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <IndicatorView
+        x:Name="indicatorView"
+        HorizontalOptions="Center"
+        IndicatorColor="LightBlue"
+        SelectedIndicatorColor="DarkBlue"/>
+        
+    </StackLayout>
+
 </ContentPage>
